@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<title>
+    {% block title %}
+Home Page of the workshops
+{% endblock title %}
+</title>
+{% block content %}
+<style>
+      .first-div{
+      background-image: url("{% static 'general/img/bg1.png' %}");
+      background-position: right bottom;
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      }
+  </style>
+  <div class="py-5 text-center text-md-right first-div">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bg-white p-5 mx-auto col-md-12 col-10">
+            <h3 class="display-3">Welcome to Workshops</h3>
+            <p class="mb-3 lead">of different programming languages</p>
+            <p class="mb-4">Enhance the opportunity to learn more than just from the books.
+                Keep yourself ready for the world's demand.
+                Learn programming of different programming language right from beginning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mx-auto col-md-12">
+          <h1>Lets Learn something new&nbsp;</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="{% static 'general/img/python-logo.png' %}"> </div>
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="{% static 'general/img/php.png' %}"> </div>
+        <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="{% static 'general/img/jva.jpeg' %}"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-12">
+          <h1 class="mb-3">Our team</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'general/img/prak.jpeg' %}" alt="Card image cap" width="200">
+          <h4> <b>Prakalpit</b></h4>
+          <p class="mb-0">PRESIDENT</p>
+        </div>
+        <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'general/img/roshis.jpg' %}" alt="Card image cap" width="200">
+          <h4> <b>Roshis Rai</b></h4>
+          <p class="mb-0">CODER -IN -CHARGE</p>
+        </div>
+        <div class="col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="{% static 'general/img/anil.jpeg' %}" width="200">
+          <h4> <b>Anil Poudyal</b><br></h4>
+          <p class="mb-0">SECRETARY&nbsp;<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+    <style>
+    .second-div{
+        background-image: url("{% static 'general/img/bg2.jpeg' %}");
+        background-position: right bottom;
+        background-size: cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+
+    </style>
+  <div class="py-5 text-center text-md-right second-div">
+    <div class="container">
+      <div class="row">
+        <div class="p-5 mx-auto mx-md-0 ml-md-auto col-10 col-md-9">
+          <h3 class="display-3">Update yourself</h3>
+          <p class="mb-3 lead">Click here to Join the classes going on.</p>
+          <form class="form-inline d-flex justify-content-end">
+            <div class="input-group">
+              <div class="input-group-append"> <button class="btn btn-primary" type="button">JOIN THE CLASSES&nbsp;<br></button> </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

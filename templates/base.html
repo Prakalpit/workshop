@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar6">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar6">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item"> <a class="nav-link" href="#" style="color:aqua;">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" style="color: aqua";>About</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" style="color: aqua";>Workshops</a> </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a class="nav-link" href="#" style="color: aliceblue" >Log in</a> </li>
+          <li class="nav-item"> <a class="nav-link text-primary" href="#">Register</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--nav ends-->
+  {% block content %}
+  {% endblock content %}
+  <!--footer begins-->
+  <br>
+  <br>
+<div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center"> <i class="d-block fa fa-stop-circle mb-3 text-muted fa-3x"></i>
+          <p> <a href="https://cutt.ly/OvNdsXH" target="_blank"> DEBHIS School <br>Bardaghat-4, Nepal</a> </p>
+
+          <p class="mb-0"> <a href="mailto: xcc@xavier.edu.np">xcc@xavier.edu.np</a> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-center my-3"> <a href="#">
+            <i class="d-block fa fa-facebook-official text-muted fa-lg mr-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Created By Prakalpit Neupane</p>
+            <p class="mb-0">© 2021-2023 All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+
+</html>
