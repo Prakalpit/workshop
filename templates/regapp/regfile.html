@@ -1,0 +1,84 @@
+
+{% load bootstrap3 %}
+
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>{% block title %} Register Here {% endblock %}</title>
+</head>
+<style>
+    .full-nav{
+        background: aliceblue;
+    }
+
+</style>
+
+ <nav class="navbar navbar-expand-md navbar-light full-nav ">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar6">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar6">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item"> <a class="nav-link" href="{% url 'home' %}" style="color:aqua;">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" style="color: aqua";>About</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" style="color: aqua";>Workshops</a> </li>
+        </ul>
+        <ul class="navbar-nav">
+
+            <!--li class="nav-item"> <a class="nav-link" href="#" style="color: aliceblue" >Admin</a> </li-->
+
+          <li class="nav-item"> <a class="nav-link text-primary" href="{% url 'regfile' %}">Register</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body>
+<h3 class="text-center">Please Register</h3>
+<style>
+    .form{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .btn {
+        align-content: center;
+    }
+
+    .btn:hover {
+        color: aquamarine;
+    }
+
+    footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+    }
+</style>
+<form action="" method="POST" class="form" >
+  {% csrf_token %}
+    {{ form.media }}
+    {% bootstrap_form form %}
+  <input type="submit" class="btn">
+</form>
+<br>
+<br>
+<br>
+<footer>
+        <span>Created By Prakalpit Neupane | <span class="far fa-copyright"></span> 2021-2021 All rights reserved.</span>
+    </footer>
+</body>
+
+
+</html>
